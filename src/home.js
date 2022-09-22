@@ -1,14 +1,25 @@
-import spinnerSection from './components/spinner-section/spinner-section';
+import Section1 from "./components/spinner-section/spinner-section";
+import Section2 from "./components/player-section/player-section";
+import Section3 from "./components/scores-section/scores-section";
+import './App.css';
 
 const Home = () => {
     return(
-        <div className='app'>
-        <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <spinnerSection/>
-  
-      </div>
+    <div className='grid grid-cols-2 gap-4'>
+        <div className=" test h-96 ">
+            <Section1/>
+        </div>
+        <div className=' test h-96'>
+            <div className=" test2 h-2/3">
+                <Section2/>
+            </div>
+            <div className=" test2 h-1/3">
+                <Section3/>
+            </div>
+        </div>
+        
+        
+    </div>
     )
 }
 
