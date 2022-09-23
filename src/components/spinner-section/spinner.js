@@ -13,8 +13,8 @@ const Spinner = () => {
                     <span className='span1'></span>
                     <span className='span2'></span>
                     <span className='span3'></span>
-                    {/* <span className='span4'></span>
-                    <span className='span5'></span> */}
+                    <span className='span4'></span>
+                    <span className='span5'></span>
                 </div>
             </div>
         </div>

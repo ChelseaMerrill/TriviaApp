@@ -18,32 +18,32 @@ span{
     position: absolute;
 }
 .span1{
-    clip-path: polygon(0 100%, 100% 50%, 0 -8%);
+    /* clip-path: polygon(0 100%, 100% 50%, 0 -8%); */
     background-color: red;
     top: 120px;
     left: 0;
 }
 .span2{
-    clip-path: polygon(100% 100%, 0 50%, 100% -8%);
+    /* clip-path: polygon(100% 100%, 0 50%, 100% -8%); */
     background-color: blue;
     top: 120px;
     right: 0;
 }
 .span3{
-    clip-path: polygon(50% 0%, -8% 100%, 100% 100%);
+    /* clip-path: polygon(50% 0%, -8% 100%, 100% 100%); */
     background-color: yellow;
     bottom: 0;
     left: 120px;
 }
-/* .span4{
+.span4{
     clip-path: polygon(50% 100%, 100% 0, -8% 0);
     background-color: green;
     top: 0;
-    left: 120px;
-} */
-/* .span5{
-    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    left: -20px;
+} 
+.span5{
+    clip-path: polygon(50% 100%, 108% 0, -8% 0);
     background-color: orange;
     top: 0;
     left: 120px;
-} */
+}

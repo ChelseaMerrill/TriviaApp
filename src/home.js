@@ -6,10 +6,10 @@ import './App.css';
 const Home = () => {
     return(
     <div className='grid grid-cols-2 gap-4'>
-        <div className=" test h-96 ">
+        <div className=" test ">
             <Section1/>
         </div>
-        <div className=' test h-96'>
+        <div className=' test '>
             <div className=" test2 h-2/3">
                 <Section2/>
             </div>
