@@ -1,0 +1,19 @@
+.span1-1{
+    clip-path: polygon(0 100%, 50% 50%, 0 0);
+}
+
+.span2-1{
+    clip-path: polygon(0 100%, 50% 50%, 0 0);
+}
+ 
+.span3-1{
+    clip-path: polygon(0 100%, 50% 50%, 0 0);
+}
+
+.span4-1{
+    clip-path: polygon(0 100%, 50% 50%, 0 0);
+} 
+
+.your-board{
+    margin: auto;
+}
