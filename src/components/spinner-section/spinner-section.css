@@ -1,15 +1,6 @@
 .main-box{
-    position: relative;
     width: 500px;
     height: 500px;
-}
-.box{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 50%;
-    border: 10px solid black;
-    overflow: hidden;
 }
 span{
     width: 100%;
@@ -17,21 +8,31 @@ span{
     display: inline-block;
     position: absolute;
 }
+span b{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 26px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right: 70%;
+}
+.spin{
+    transform: translate(-50%, -50%);
+}
 .span1{
-   background-color: blueviolet;
    clip-path: polygon(0 100%, 50% 50%, 0 0);
 
 }
  .span2{
-    background-color: rgb(226, 49, 43);
-   clip-path: polygon(0 100%, 50% 50%, 0 0);
+    clip-path: polygon(0 100%, 50% 50%, 0 0);
 
 }
 .span3{
-    background-color: yellow;
     clip-path: polygon(0 100%, 50% 50%, 0 0);
 }
 .span4{
-    background-color: green;
     clip-path: polygon(0 100%, 50% 50%, 0 0);
 } 
