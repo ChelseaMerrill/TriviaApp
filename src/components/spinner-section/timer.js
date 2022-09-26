@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import timerDisplay from './timer-display';
-// import StopwatchHistory from './StopwatchHistory.jsx';
+import TimerDisplay from './timer-display';
 
 class Timer extends React.Component {
   constructor(props) {
@@ -62,18 +60,17 @@ class Timer extends React.Component {
     return (
       <div className='stopwatch mb-32'>
         {this.state.running === false && (
-          <button className='bg-green-400' onClick={this.start}>START</button>
+          <button className='bg-green-400 rounded-full w-24 h-8 active:bg-blue-600 shadow-md' onClick={this.start}>START</button>
         )}
         {this.state.running === true && (
-          <button className='bg-red-400' onClick={this.stop}>STOP</button>
+          <button className='bg-red-400 rounded-full w-24 h-8 active:bg-blue-600 shadow-md' onClick={this.stop}>STOP</button>
         )}
-        <button className='bg-gray-400'onClick={this.reset}>RESET</button>
-        <timerDisplay
+        <button className='bg-gray-400 rounded-full w-24 h-8 active:bg-blue-600 shadow-md m-2' onClick={this.reset}>NEW GAME</button>
+        <TimerDisplay
           ref="display"
           {...this.state}
           formatTime={this.formatTime}
         />
-        {/* <StopwatchHistory {...this.state} formatTime={this.formatTime} /> */}
       </div>
     );
   }
