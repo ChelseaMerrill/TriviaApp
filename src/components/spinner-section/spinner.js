@@ -1,12 +1,21 @@
 import './spinner-section.css'; 
 
-const Spinner = () => {
+const spinFunction = () => {
 
+    var x = 1024; //min value
+    var y = 9999; //max value
+
+    var deg = Math.floor(Math.random() * (x-y)) + y
+
+    document.getElementById('box').style.transform = "rotate("+deg+ "deg)";
+
+}
+const Spinner = () => {
     return(
     <div className='spinner-section'>
         <h1 className="text-3xl font-bold underline">Spinner</h1>
-        <div className='main-box position: relative'>
-            <div className='box position: relative w-full h-full rounded-full border-4 shadow-2xl overflow-hidden'>
+        <div id ='main-box' className='main-box position: relative'>
+            <div id ='box' className='box position: relative w-full h-full rounded-full border-4 shadow-2xl overflow-hidden'>
                 <div className='box1'>
                     <span className='span1 bg-red-600'><b>1</b></span>
                     <span className='span2 rotate-90 bg-yellow-300'><b>2</b></span>
