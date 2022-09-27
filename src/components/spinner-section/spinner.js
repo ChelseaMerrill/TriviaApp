@@ -1,9 +1,10 @@
 import './spinner-section.css'; 
-// import (useState, useEffect)
+import QuestionsArray from '../../files/question-data'
 
 const Spinner = () => {
     return(
     <div className='spinner-section'>
+
         <div id ='main-box' className='main-box position: relative mb-6'>
             <div id ='box' className='box position: relative w-full h-full rounded-full border-4 shadow-2xl overflow-hidden'>
                 <div className='box1'>
@@ -14,6 +15,10 @@ const Spinner = () => {
                 </div>
                 <button className='spin position: absolute ring-4 ring-orange-500/80 bg-slate-200 shadow-inner rounded-full h-14 w-14 top-1/2 left-1/2' onClick={spinFunction} >Spin</button>
             </div>
+        </div>
+
+        <div>
+            <h1>The winner is:</h1>
         </div>
     </div>
     );
