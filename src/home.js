@@ -5,11 +5,11 @@ import './App.css';
 
 const Home = () => {
     return(
-    <div className='grid grid-cols-2 gap-4'>
+    <div className='grid grid-cols-2 gap-20 p-8 flex flex-wrap'>
         <div className=" test ">
             <Section1/>
         </div>
-        <div className=' test '>
+        <div className='test'>
             <div className=" test2 h-2/3">
                 <Section2/>
             </div>

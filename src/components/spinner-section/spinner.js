@@ -1,4 +1,5 @@
 import './spinner-section.css'; 
+// import (useState, useEffect)
 
 const Spinner = () => {
     return(
@@ -11,7 +12,7 @@ const Spinner = () => {
                     <span className='span3 rotate-180 bg-green-400' ><b>3</b></span>
                     <span className='span4 -rotate-90 bg-blue-700'><b>4</b></span>
                 </div>
-                <button className='spin position: absolute ring-4 ring-orange-500/80 bg-slate-200 shadow-inner rounded-full h-14 w-14 top-1/2 left-1/2'>Spin</button>
+                <button className='spin position: absolute ring-4 ring-orange-500/80 bg-slate-200 shadow-inner rounded-full h-14 w-14 top-1/2 left-1/2' onClick={spinFunction} >Spin</button>
             </div>
         </div>
     </div>
