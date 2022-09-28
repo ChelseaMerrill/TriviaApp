@@ -15,35 +15,47 @@ const Spinner = () => {
                     <button className='spin position: absolute ring-4 ring-orange-500/80 bg-slate-200 shadow-inner rounded-full h-14 w-14 top-1/2 left-1/2' data-bs-toggle="modal" data-bs-target="#exampleModalCenter" onClick={spinFunction}>Spin</button>
                 </div>
             </div>
-            <div>
-                <h1>The winner is:</h1>
-            </div>
 
             <div className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalCenter" tabIndex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
                 <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
                     <div className="modal-content shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none ">
                         <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md bg-yellow-300">
                             <h5 className="text-xl font-medium leading-normal text-gray-500" id="exampleModalScrollableLabel">Trivia Question</h5>
-                            <button type="button"
-                                className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                                data-bs-dismiss="modal" aria-label="Close">
-                            </button>
+                            <button type="button"className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body relative p-4">
-                        <ul className="text-gray-500 text-base">
-                                    <li>Option 1</li>
-                                    <li>Option 2</li>
-                                    <li>Option 3</li>
-                                    <li>Option 4</li>
-                                </ul>
+                            <div class="flex justify-left">
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                        <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
+                                        Option 1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                    Option 2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                    Option 3
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                    Option 4
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            
                         </div>
                         <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
-                            <button type="button" className="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
-                                Close
-                            </button>
-                            <button type="button" className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1">
-                                Save changes
-                            </button>
+                            <button type="button" className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1">Submit</button>
                         </div>
                     </div>
                 </div>
