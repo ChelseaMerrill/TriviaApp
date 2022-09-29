@@ -45,134 +45,122 @@ const QuestionsArray = [
         id: 5,
         category: 'History',
         question: 'In what year did JFK die?',
-        answer: '1963',
-        choices: [
-            '1969',
-            '1964',
-            '1970'
-        ]
+        a1: '1969',
+        a2: '1963',
+        a3: '1964',
+        a4: '1970',
+        answer: 2
     },
     {
         id: 6,
         category: 'History',
         question: 'How long was William Harrision President?',
-        answer: '32 days',
-        choices: [
-            '4 years',
-            '8 years',
-            '7 months'
-        ]
+        a1: '4 years',
+        a2: '7 months',
+        a3: '8 years',
+        a4: '32 days',
+        answer: 4
     },
     {
         id: 7,
         category: 'History',
         question: 'Which of these states did not seceded to form the original Confederacy during the U.S, Civil War?',
-        answer: 'Kentucky',
-        choices: [
-            'Florida',
-            'Texas',
-            'South Carolina'
-        ]
+        a1: 'Georgia',
+        a2: 'Florida',
+        a3: 'Kentucky',
+        a4: 'South Caolina',
+        answer: 3
     },
     {
         id: 8,
         category: 'History',
         question: 'The ancient city of Rome was built on how many hills?',
-        answer: 'Seven',
-        choices: [
-            'Six',
-            'Five',
-            'Four'
-        ]
+        a1: 'Seven',
+        a2: 'Six',
+        a3: 'Five',
+        a4: 'Four',
+        answer: 1
     },
     {
         id: 9,
         category: 'Entertainment',
         question: 'What are the dying words of Charles Foster Kane in Citizen Kane?',
-        answer: 'Rosebud',
-        choices: [
-            'Goodbye',
-            "I'll miss you",
-            'Xanadu'
-        ]
+        a1: 'Rosebud',
+        a2: 'Goodbye',
+        a3: "I'll miss you",
+        a4: 'Xanadu',
+        answer: 1
     },
     {
         id: 10,
         category: 'Entertainment',
         question: 'For what movie did Tom Hanks score his first Academy Award nomination?',
-        answer: 'Big',
-        choices: [
-            'Toy Story',
-            'Forest Gump',
-            'The Green Mile'
-        ]
+        a1: 'Toy Story',
+        a2: 'Big',
+        a3: 'Forest Gump',
+        a4: 'The Green Mile',
+        answer: 2
     },
     {
         id: 11,
         category: 'Entertainment',
         question: 'In Risky Business, what song did Tom Cruise famously lip-sync to in his underwear?',
-        answer: '"Old Time Rock and Roll" by Bob Seger',
-        choices: [
-            '"You Shook Me All Night Long" by AC/DC',
-            '"Whip It" by Devo',
-            '"Mr. Roboto" by Styx'
-        ]
+        a1: '"You Shook Me All Night Long" by AC/DC',
+        a2: '"Whip It" by Devo',
+        a3: '"Old Time Rock and Roll" by Bob Seger',
+        a4:  '"Mr. Roboto" by Styx',
+        answer: 3
     },
     {
         id: 12,
         category: 'Entertainment',
         question: 'Alfred Hitchcock famously directed a 1963 horror movie about what type of animal?',
-        answer: 'Birds',
-        choices: [
-            'Wolves',
-            'Cicadas',
-            'Cats'
-        ]
+        a1: 'Wolves',
+        a2:'Cicadas',
+        a3: 'Birds',
+        a4:  'Cats',
+        answer: 3
     },
     {
         id: 13,
         category: 'Science',
         question: 'What is the most abundant gas in the atmosphere?',
-        answer: 'Nitrogen',
-        choices: [
-            'Oxygen',
-            'Hydrogen',
-            'Carbon'
-        ]
+        a1: 'Nitrogen',
+        a2:'Oxygen',
+        a3: 'Carbon',
+        a4:  'Hydrogen',
+        answer: 1
     },
     {
         id: 14,
         category: 'Science',
         question: 'What is the hottest planet in the solar system?',
-        answer: 'Venus',
-        choices: [
-            'Mars',
-            'Jupiter',
-            'Mercury'
-        ]
+        a1:  'Mercury',
+        a2:'Jupiter',
+        a3: 'Mars',
+        a4:  'Venus',
+        answer: 4
     },
     {
         id: 15,
         category: 'Science',
         question: "What’s the boiling point of water?",
-        answer: '100 degrees C',
-        choices: [
-            '100 degrees F',
-            '32 degrees C',
-            '250 degrees F'
-        ]
+        a1:  '250 degrees F',
+        a2:'32 degrees C',
+        a3: '100 degrees F',
+        a4:  '100 degrees C',
+        answer: 4
     },
     {
         id: 16,
         category: 'Science',
         question: 'How long does a human red blood cell survive?',
-        answer: '120 days',
-        choices: [
-            '1 day',
-            '60 days',
-            '280 days'
-        ]
-    },
+        a1:   '280 days',
+        a2: '60 days',
+        a3: '120 days',
+        a4:  '1 day',
+        answer: 3
+    }
 
 ]
 
