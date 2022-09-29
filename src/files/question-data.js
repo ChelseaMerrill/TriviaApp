@@ -3,45 +3,43 @@ const QuestionsArray = [
         id: 1,
         category: 'Geography',
         question: 'What is the captial of Illinois?',
-        answer: 'Springfield',
-        choices: [
-            'Chicago',
-            'Peoria',
-            'Rockford'
-        ]
+        a1: 'Springfield',
+        a2: 'Chicago',
+        a3: 'Peoria',
+        a4: 'Rockford',
+        answer: 1
+        
     },
     {
         id: 2,
         category: 'Geography',
         question: 'What is the captial of Florida?',
-        answer: 'Tallahasse',
-        choices: [
-            'Orlando',
-            'Tampa',
-            'Miami'
-        ]
+        a1: 'Orlando',
+        a2: 'Tampa',
+        a3: 'Tallahasse',
+        a4: 'Miami',
+        answer: 3
+       
     },
     {
         id: 3,
         category: 'Geography',
         question: 'Which Continent is in all four hemispheres?',
-        answer: 'Africa',
-        choices: [
-            'Europe',
-            'N. America',
-            'Australia'
-        ]
+        a1: 'Africa',
+        a2: 'Australia',
+        a3: 'N. America',
+        a4: 'Europe',
+        answer: 1
     },
     {
         id: 4,
         category: 'Geography',
         question: 'How many large islands make up Hawaii?',
-        answer: 'Eight',
-        choices: [
-            'Four',
-            'Five',
-            'Ten'
-        ]
+        a1: 'Ten',
+        a2: 'Eight',
+        a3: 'Four',
+        a4: 'Five',
+        answer: 2
     },
     {
         id: 5,
