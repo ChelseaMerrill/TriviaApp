@@ -61,6 +61,10 @@ const Spinner = () => {
                     </div>
                 </div>
             </div>
+            
+            <div>
+                {Card()}
+            </div>
         </div>
     );
 }
@@ -70,6 +74,37 @@ const spinFunction = () => {
     var y = 9999;
     var deg = Math.floor(Math.random() * (x - y)) + y
     document.getElementById('box').style.transform = "rotate(" + deg + "deg)";
+}
+
+
+// console.log(QuestionsArray)
+
+const Card = () => {
+    console.log(QuestionsArray)
+    return (
+        <div className='card-group'>
+            {QuestionsArray.map(key => {
+                if (key.category === 'Geography'){
+                    return (
+                        <div className='max-w-sm w-3/6 lg:max-w-full lg:flex m-8 border border-gray-400' key={key}>
+                        <div className="bg-yellow-300 w-32"></div>
+                        <div className=" w-96 bg-white p-4 ">
+                            <div className="mb-8">
+                                <div className="text-gray-600 font-bold text-xl mb-2">{key.question}</div>
+                                <ul className="text-gray-500 text-base">
+                                    <li>{key.answer}</li>
+                                    <li>Option 2</li>
+                                    <li>Option 3</li>
+                                    <li>Option 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    )
+                }} 
+            )}
+        </div>   
+    );
 }
 
 export default Spinner

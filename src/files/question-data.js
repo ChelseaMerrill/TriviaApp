@@ -1,4 +1,4 @@
-let QuestionsArray = [
+const QuestionsArray = [
     {
         id: 1,
         category: 'Geography',
@@ -177,3 +177,5 @@ let QuestionsArray = [
     },
 
 ]
+
+export default QuestionsArray
