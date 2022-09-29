@@ -1,5 +1,6 @@
 import './spinner-section.css';
 // import Card from './card';
+import QuestionsArray from '../../files/question-data';
 
 const Spinner = () => {
     return (
@@ -24,29 +25,29 @@ const Spinner = () => {
                             <button type="button"className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body relative p-4">
-                            <div class="flex justify-left">
+                            <div className="flex justify-left">
                                 <div>
-                                    <div class="form-check">
-                                        <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                        <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault1">
+                                    <div className="form-check">
+                                        <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                                        <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault1">
                                         Option 1
                                     </label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                <div className="form-check">
+                                    <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
                                     Option 2
                                     </label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                <div className="form-check">
+                                    <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
                                     Option 3
                                     </label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                                    <label class="form-check-label inline-block text-gray-800" for="flexRadioDefault2">
+                                <div className="form-check">
+                                    <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                    <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
                                     Option 4
                                     </label>
                                 </div>
