@@ -78,29 +78,22 @@ const spinFunction = () => {
 
 
 const Card = () => {
+    const singleCard = QuestionsArray.sort(() => Math.random() - Math.random()).find(() => true);
     return (
-        <div className='card-group'>
-            {QuestionsArray.map(key => {
-                if (key.category === 'Geography'){
-                    return (
-                        <div className='max-w-sm w-3/6 lg:max-w-full lg:flex m-8 border border-gray-400' key={key.id}>
+        <div className='max-w-sm w-3/6 lg:max-w-full lg:flex m-8 border border-gray-400'>
                         <div className="bg-yellow-300 w-32"></div>
                         <div className=" w-96 bg-white p-4 ">
                             <div className="mb-8">
-                                <div className="text-gray-600 font-bold text-xl mb-2">{key.question}</div>
+                                <div className="text-gray-600 font-bold text-xl mb-2">{singleCard.question}</div>
                                 <ul className="text-gray-500 text-base">
-                                    <li>{key.a1}</li>
-                                    <li>{key.a2}</li>
-                                    <li>{key.a3}</li>
-                                    <li>{key.a4}</li>
+                                    <li>{singleCard.a1}</li>
+                                    <li>{singleCard.a2}</li>
+                                    <li>{singleCard.a3}</li>
+                                    <li>{singleCard.a4}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    )
-                }} 
-            )}
-        </div>   
     );
 }
 
