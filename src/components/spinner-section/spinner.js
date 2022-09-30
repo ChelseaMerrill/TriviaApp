@@ -1,8 +1,8 @@
 import './spinner-section.css';
-// import Card from './card';
 import QuestionsArray from '../../files/question-data';
 
 const Spinner = () => {
+    const singleCard = QuestionsArray.sort(() => Math.random() - Math.random()).find(() => true);
     return (
         <div className='spinner-section'>
             <div id='main-box' className='main-box position: relative mb-6'>
@@ -21,7 +21,7 @@ const Spinner = () => {
                 <div className="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
                     <div className="modal-content shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none ">
                         <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md bg-yellow-300">
-                            <h5 className="text-xl font-medium leading-normal text-gray-500" id="exampleModalScrollableLabel">Trivia Question</h5>
+                            <h5 className="text-xl font-medium leading-normal text-gray-500" id="exampleModalScrollableLabel">{singleCard.question}</h5>
                             <button type="button"className="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body relative p-4">
@@ -30,25 +30,25 @@ const Spinner = () => {
                                     <div className="form-check">
                                         <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
                                         <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault1">
-                                        Option 1
+                                        {singleCard.a1}
                                     </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                                     <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
-                                    Option 2
+                                    {singleCard.a2}
                                     </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                                     <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
-                                    Option 3
+                                    {singleCard.a3}
                                     </label>
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                                     <label className="form-check-label inline-block text-gray-800" htmlFor="flexRadioDefault2">
-                                    Option 4
+                                    {singleCard.a4}
                                     </label>
                                 </div>
                             </div>
@@ -61,10 +61,6 @@ const Spinner = () => {
                     </div>
                 </div>
             </div>
-            
-            <div>
-                {Card()}
-            </div>
         </div>
     );
 }
@@ -74,27 +70,6 @@ const spinFunction = () => {
     var y = 9999;
     var deg = Math.floor(Math.random() * (x - y)) + y
     document.getElementById('box').style.transform = "rotate(" + deg + "deg)";
-}
-
-
-const Card = () => {
-    const singleCard = QuestionsArray.sort(() => Math.random() - Math.random()).find(() => true);
-    return (
-        <div className='max-w-sm w-3/6 lg:max-w-full lg:flex m-8 border border-gray-400'>
-                        <div className="bg-yellow-300 w-32"></div>
-                        <div className=" w-96 bg-white p-4 ">
-                            <div className="mb-8">
-                                <div className="text-gray-600 font-bold text-xl mb-2">{singleCard.question}</div>
-                                <ul className="text-gray-500 text-base">
-                                    <li>{singleCard.a1}</li>
-                                    <li>{singleCard.a2}</li>
-                                    <li>{singleCard.a3}</li>
-                                    <li>{singleCard.a4}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-    );
 }
 
 export default Spinner
